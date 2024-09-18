@@ -23,6 +23,13 @@
                         case "5":
                         hadiah = "Uang Rp 50";
                         break;
+                        default:
+                            document.write("<p>Opss! anda salah pilih</p>");
+                            if(hadiah === ""){
+                                document.write("<p>Kamu gagal mendapatkan hadiah</p>");
+                            } else {
+                                document.write("<h2>Selamat kamu mendapatkan " +hadiah+ "</h2>");
+                            }
 
             }
         </script>
