@@ -49,8 +49,10 @@ $daftarNilai = [
         ['Bob', 80],
         ['Charlie', 85],
     ]
-    ];
-    $mataKuliah = 'Fisika';
-    echo "Daftar nilai mahasiswa dalam mata kuliah $mataKuliah: <br>"
+];
 
-    foreach ($daftarNilai[])
+$mataKuliah = 'Fisika';
+echo "Daftar nilai mahasiswa dalam mata kuliah $mataKuliah: <br>"; // Added semicolon here
+
+foreach ($daftarNilai[$mataKuliah] as $nilai) 
+    echo "Nama: {$nilai[0]}, Nilai: {$nilai[1]}<br>";
